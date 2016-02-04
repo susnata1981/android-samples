@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:columnCount="2">
+
+        <com.ziplly.mobile.activitytransition.RectImageView
+            android:id="@+id/first"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:ri_color="@android:color/holo_red_light"/>
+
+        <com.ziplly.mobile.activitytransition.RectImageView
+            android:id="@+id/second"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:ri_color="@android:color/holo_green_dark"/>
+
+        <com.ziplly.mobile.activitytransition.RectImageView
+            android:id="@+id/third"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_columnSpan="1"
+            app:ri_color="@android:color/holo_blue_bright"/>
+
+        <com.ziplly.mobile.activitytransition.RectImageView
+            android:id="@+id/fourth"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_columnSpan="1"
+            app:ri_color="@android:color/holo_orange_light"/>
+    </GridLayout>
+</FrameLayout>
